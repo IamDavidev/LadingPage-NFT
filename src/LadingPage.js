@@ -1,6 +1,9 @@
-import '../layouts/Navbar.js';
-import '../layouts/header.js'
-
+import './layouts/Discover.js';
+import './layouts/Navbar.js';
+import './layouts/header.js';
+import './layouts/auctions.js';
+import './layouts/GettingStarted.js';
+import './layouts/Footer.js';
 
 class LadingPage extends HTMLElement {
   constructor() {
@@ -22,6 +25,13 @@ class LadingPage extends HTMLElement {
             align-items:center;
             gap:6rem;
         }
+        main {
+          display:flex;
+          padding:0 3rem;
+          flex-direction:column;
+          box-sizing:border-box;
+          width:100%;
+        }
     
 
     `;
@@ -36,13 +46,13 @@ class LadingPage extends HTMLElement {
         <style>${LadingPage.styles}</style>
     <div class='container'>
         <nav-bar></nav-bar>
-        <header-layout></header-layout>
+        <header-nft ></header-nft>
         <main>
-            main
+          <hot-auctions></hot-auctions>
+          <getting-started></getting-started>
+          <discover-nft></discover-nft>
         </main>
-        <footer>
-            footer
-        </footer>
+        <footer-nft></footer-nft>
     </div>
     `;
   }

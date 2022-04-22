@@ -115,7 +115,7 @@ class header extends HTMLElement {
      <div class='container'>
         <section class="header">
             <h1 class="header__title">
-                discover, collect, and charity in extraordinary <span>NFT</span> marketplace
+                Discover, collect, and charity in extraordinary <span>NFT</span> marketplace
             </h1>
             <p class="header__bio"> brings together artists and creators on the same platform. Buy exclusive premium NFTs created by the world's top artists.</p>
             <div class="header__btns"> 
@@ -131,7 +131,7 @@ class header extends HTMLElement {
                     <div class="card__footer--containerUser">
                         <div class="user">
                             <p class="user--name">
-                                Laura
+                                Gaslur
                             </p>
                             <p class="user--wallet">
                                 0.21 ETH
@@ -154,4 +154,4 @@ class header extends HTMLElement {
     `;
   }
 }
-customElements.define('header-layout', header);
+customElements.define('header-nft', header);

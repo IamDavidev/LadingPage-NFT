@@ -1,1 +1,1 @@
-import './components/LadingPage.js';
+import './LadingPage.js';
