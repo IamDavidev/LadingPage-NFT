@@ -72,6 +72,15 @@ class GettingStarted extends HTMLElement {
       .cardOptions--title{
           text-align:center;
       }
+      @media (min-width:320px) and (max-width:768px){
+          .starte--description{
+              text-align:center;
+          }
+          .options::before{
+              height: 100%;
+              width:auto;
+          }
+      }
     `;
     }
 
@@ -86,8 +95,7 @@ class GettingStarted extends HTMLElement {
         <div class="started">
             <h2 class="started--title"> Getting started</h2>
             <p class="starte--description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed euismod, urna eu tincidunt tincidunt, ipsum nunc
+                You'd have to have been living under a rock not to have heard about the recent NFT (non-fungible token) hype. Celebrities, digital artists, and creatives are all gearing up to put their artwork on the blockchain.
             </p>
         </div>
         <div class="renderOption">

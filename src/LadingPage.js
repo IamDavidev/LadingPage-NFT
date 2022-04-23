@@ -32,8 +32,11 @@ class LadingPage extends HTMLElement {
           box-sizing:border-box;
           width:100%;
         }
-    
-
+        @media (min-width:320px)and (max-width:480px){
+          main{
+            padding: 0;
+          }
+        }
     `;
   }
 
@@ -45,13 +48,13 @@ class LadingPage extends HTMLElement {
     this.shadowRoot.innerHTML = /*html*/ `
         <style>${LadingPage.styles}</style>
     <div class='container'>
-        <nav-bar></nav-bar>
+        <!-- <nav-bar></nav-bar> -->
         <header-nft ></header-nft>
         <main>
           <hot-auctions></hot-auctions>
           <getting-started></getting-started>
           <discover-nft></discover-nft>
-        </main>
+          </main>
         <footer-nft></footer-nft>
     </div>
     `;

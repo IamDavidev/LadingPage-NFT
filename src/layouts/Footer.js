@@ -50,7 +50,22 @@ class Footer extends HTMLElement {
             margin:1rem 0;
             font-size:1.5rem
         }
+        @media (min-width:320px) and (max-width:768px){
 
+            .container{
+                padding:0;
+                flex-direction:column;
+                gap:10rem;
+            }
+
+            .footer__reference{
+                width:100%;
+            }
+            
+            .footer{
+                flex-direction:column;
+            }
+        }
     `;
     }
 

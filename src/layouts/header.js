@@ -27,6 +27,8 @@ class header extends HTMLElement {
       }
       .header__bio{
           font-size:1.5rem;
+          margn-top:24px;
+          margin-bottom:32px;
       }
       .header__btns{
             display:flex;
@@ -83,11 +85,9 @@ class header extends HTMLElement {
             gap:10px
       }
       .card__footer--user{
-        width:50px;
-        height:50px;
+        width:52px;
+        height:52px;
         border-radius:50%;
-        border:1px solid var(--color--primary);
-        padding:3px;
         object-fit:contain;
       }
       .card__footer--containerUser{
@@ -102,6 +102,35 @@ class header extends HTMLElement {
           text-align:end;
           font-weight:bold;
       }
+      @media (min-width:320px) and (max-width:1023px){
+        .container{
+          flex-direction:column;
+          padding:0;
+        }
+        .header__title{
+          font-size:42px;
+        }
+        .header__bio{
+          text-align:center;
+        }
+        .header__btns{
+          display:flex;
+          justify-content:center;
+          align-items:center;
+        }
+        .header__btns > button{
+          width:120px;
+        }
+        .containCard{
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+        }
+        .card--img{
+          width:100%;
+        }
+      }
+
     `;
   }
 
@@ -123,7 +152,7 @@ class header extends HTMLElement {
                 <button class="header__btns--create">Create</button>
             </div>
         </section>
-        <section>
+        <section class="containCard">
             <div class="card">
                 <img src="${imgHeader}" alt="header"  class="card--img"/>
                 <div class="card__footer">

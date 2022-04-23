@@ -28,6 +28,15 @@ class auctions extends HTMLElement {
             width:100%;
 
         }
+        @media (min-width:320px)and (max-width:768px){
+            .renderTitle{
+                flex-direction:column;
+                margin:1rem 0 ;
+            }
+            .renderCards{
+                justify-content:center;
+            }
+        }
     `;
     }
 
@@ -41,7 +50,7 @@ class auctions extends HTMLElement {
      <div class='container'>
         <div class="renderTitle"> 
            <h2>Hot actions</h2>
-           <span>view all -></span>
+           <span>view all </span>
         </div>
         <div class="renderCards">
         <card-nft 

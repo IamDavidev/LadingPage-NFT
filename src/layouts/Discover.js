@@ -63,6 +63,18 @@ class Discover extends HTMLElement {
             padding:1rem 2.5rem;
             border-radius:10px;
         }
+        @media (min-width:320px) and (max-width:768px){
+            .discovery{
+                flex-direction:column;
+                margin:2rem 0;
+            }
+            .discovery__options{
+                flex-wrap:wrap;
+            }
+            .discovery__cards{
+                justify-content:center;
+            }
+        }
     `;
     }
 
