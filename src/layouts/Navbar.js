@@ -70,6 +70,11 @@ class Navbar extends HTMLElement {
         .nav__buttons--signin{
             border:none;
         }
+        @media (min-width:300px) and (max-width:768px){
+            .nav{
+                flex-direction:column;
+            }
+        }
     `;
     }
 

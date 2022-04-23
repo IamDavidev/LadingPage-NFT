@@ -48,7 +48,7 @@ class LadingPage extends HTMLElement {
     this.shadowRoot.innerHTML = /*html*/ `
         <style>${LadingPage.styles}</style>
     <div class='container'>
-        <!-- <nav-bar></nav-bar> -->
+         <nav-bar></nav-bar> 
         <header-nft ></header-nft>
         <main>
           <hot-auctions></hot-auctions>
